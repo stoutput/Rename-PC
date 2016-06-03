@@ -13,7 +13,7 @@ $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
 rename-computer -NewName $newname -ComputerName $computer -DomainCredential $user
 
-$reboot = read-host -prompt 'Reboot computer (prompting user) to force immediate name change? [y/n]';
+$reboot = read-host -prompt 'Reboot computer (prompting user) to initiate name change? [y/n]';
 
 if($reboot -eq 'y' -or $reboot -eq'Y'){
 
